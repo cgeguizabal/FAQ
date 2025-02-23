@@ -15,9 +15,9 @@ displayBtn.forEach((btn, index) => {
     currentAnswer.classList.toggle("deactivated");
 
     if (currentIcon.src.endsWith("icon-plus.svg")) {
-      currentIcon.src = "../public/icon-minus.svg";
+      currentIcon.src = "./icon-minus.svg";
     } else {
-      currentIcon.src = "/assets/icon-plus.svg";
+      currentIcon.src = "./icon-plus.svg";
     }
   });
 });
