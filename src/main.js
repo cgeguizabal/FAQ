@@ -17,7 +17,7 @@ displayBtn.forEach((btn, index) => {
     if (currentIcon.src.endsWith("icon-plus.svg")) {
       currentIcon.src = "../public/icon-minus.svg";
     } else {
-      currentIcon.src = "../public/icon-plus.svg";
+      currentIcon.src = "/assets/icon-plus.svg";
     }
   });
 });
