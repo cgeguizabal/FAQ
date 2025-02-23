@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Work Sans", serif;
+  font-size: 1.6rem;
+  background-color: var(--light-pink);
+  background-image: url("../public/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: 25% -3%;
+  background-attachment: fixed;
+
+  /* Weights: 400, 600, 700 */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 1.8rem;
+}
+
+.box-container {
+  margin: 15rem auto;
+  max-width: 55rem;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.title-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.question-answer-container {
+  margin-top: 2rem;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  gap: 2rem;
+}
+
+.question-container:hover,
+.question-container:link {
+  cursor: pointer;
+  color: #ad28eb;
+}
+
+.answer-container {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--grayish-purple);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+hr {
+  border: 0;
+  border-top: 0.2rem solid var(--light-pink);
+  margin-top: 1rem;
+}
+
+.active {
+  display: inline-block;
+}
+
+.deactivated {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 58%;
+  }
+
+  body {
+    font-family: "Work Sans", serif;
+    font-size: 1.6rem;
+    background-color: var(--light-pink);
+    background-image: url("../public/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+
+    /* Weights: 400, 600, 700 */
+  }
+}
