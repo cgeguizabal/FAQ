@@ -14,7 +14,7 @@ displayBtn.forEach((btn, index) => {
     currentAnswer.classList.toggle("active");
     currentAnswer.classList.toggle("deactivated");
 
-    if (currentIcon.src.endsWith("icon-plus.svg")) {
+    if (currentIcon.src.includes("icon-plus.svg")) {
       currentIcon.src = "./icon-minus.svg";
     } else {
       currentIcon.src = "./icon-plus.svg";
