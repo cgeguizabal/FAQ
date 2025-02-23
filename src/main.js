@@ -14,10 +14,12 @@ displayBtn.forEach((btn, index) => {
     currentAnswer.classList.toggle("active");
     currentAnswer.classList.toggle("deactivated");
 
-    if (currentIcon.src.includes("icon-plus.svg")) {
+    if (currentIcon.getAttribute("data-state") === "plus") {
       currentIcon.src = "./icon-minus.svg";
+      currentIcon.setAttribute("data-state", "minus");
     } else {
       currentIcon.src = "./icon-plus.svg";
+      currentIcon.setAttribute("data-state", "plus");
     }
   });
 });
